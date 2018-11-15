@@ -1,7 +1,7 @@
-//User can add any string with using next characters () { } '"
+//User can add some value with using next characters () { } '" []
 
-var str = prompt('Предложенная строка кода будет подвергнута проверке на закрытие скобок и кавычек.\n Вы можете ввести свою строку кода до начала проверки.',
- "if (str.charAt(position) == letter) {");
+var str = prompt('Предложенная строка кода будет подвергнута проверке на закрытие скобок и кавычек.' +
+'\n Вы можете ввести свою строку кода до начала проверки.', "if (str.charAt(position) == letter) {");
 
 
 var char1 = '"', 
@@ -34,6 +34,7 @@ var res6 = char_count(str, char6);
 var res7 = char_count(str, char7);
 var res8 = char_count(str, char8);
 
+//Check result of function with quantity of characters
 
 if ((res1 % 2) !== 0) {
 	alert( 'Ищите ошибку с символом: ' + char1);
@@ -46,7 +47,7 @@ if ((res2 % 2) !== 0) {
 	alert( 'Ищите ошибку с символом: ' + char2);
 }
 else {
-	console.log('Все в порядке c символом2: ' + ' ' + '"' + ' ');
+	console.log('Все в порядке c символом: ' + ' ' + '\"' + ' ');
 }
 
 
